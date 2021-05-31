@@ -5,6 +5,10 @@
 /.pnp
 .pnp.js
 
+#/my-app
+../.App.css.swp
+../../.gitignore.swp
+
 # testing
 /coverage
 
