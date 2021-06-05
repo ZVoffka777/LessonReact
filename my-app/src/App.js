@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
-import './components/Header.module.css';
-import './components/Navbar.module.css';
-import './components/Profile.module.css';
-import Header from './components/Header';
-import Navbar from './components/Navbar';
-import Profile from './components/Profile';
+import './components/Header/Header.module.css';
+import './components/Navbar/Navbar.module.css';
+import './components/Profile/Profile.module.css';
+import './components/Profile/MyPost/MyPost.module.css';
+import './components/Profile/MyPost/MyPost.jsx';
+import Header from './components/Header/Header';
+import Navbar from './components/Navbar/Navbar';
+import Profile from './components/Profile/Profile';
 
 const App = () => {
 	return (
