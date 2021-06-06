@@ -4,7 +4,6 @@ import './components/Header/Header.module.css';
 import './components/Navbar/Navbar.module.css';
 import './components/Profile/Profile.module.css';
 import './components/Profile/MyPost/MyPost.module.css';
-import './components/Profile/MyPost/MyPost.jsx';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
