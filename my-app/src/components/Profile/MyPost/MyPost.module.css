@@ -6,3 +6,11 @@
 .item {
 	color: red;
 }
+
+hr {
+	width: 90%;
+	height: 1px;
+	margin: 1em auto;
+	border: none;
+	background: #ccc;
+}
