@@ -6,7 +6,9 @@ const Post = (props) => {
 	return <div className={s.item}>
 			<img src={unnamed} alt={'img'} width={88} height={88}/>
 			{props.message}
-				<div><span>{props.like} like</span></div>
+				<div><span>{props.like} like</span>
+			{props.likesCount}
+			</div>
 		</div>
 }
 
