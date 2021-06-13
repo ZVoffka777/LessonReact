@@ -4,7 +4,7 @@ import s from './Profile.module.css';
 import MyPost from './MyPost/MyPost';
 
 const Profile = () => {
-	return <div className={s.content}>
+	return <div>
 		<div> <img src={content1242} alt={'img'} width={1660} height={70}/> </div>
 		<MyPost/>
 		</div>
