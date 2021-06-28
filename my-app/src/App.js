@@ -18,18 +18,24 @@ import Music from './components/Music/Music';
 import Settings from './components/Settings/Settings';
 import {BrowserRouter, Route} from 'react-router-dom';
 
-const App = () => {
+const App = (props) => {
+	let posts = [
+		{id: 1, message: 'Hi, how are you?', likesCount: 14},
+		{id: 2, message: 'How is your it-kamasutra?', likesCount: 12},
+		{id: 3, message: 'Blabla', likesCount: 12},
+		{id: 4, message: 'Dada', likesCount: 12},
+	]
 	return (
 		<BrowserRouter>
 			<div className='app-wrapper'>
 				<Header/>
 				<Navbar/>
 				<div className='app-wrapper-content'>
-					<Route path='/profile' component={ () => <Profile/>}/>
-					<Route path='/dialogs' render={ () => <Dialogs/>}/>
-					<Route path='/news' component={ () => <News/>}/>
-					<Route path='/music' component={ () => <Music/>}/>
-					<Route path='/settings' component={ () => <Settings/>}/>
+					<Route path='/profile' render={ () => <Profile posts={props.posts}/>}/>
+					<Route path='/dialogs' render={ () => <Dialogs dialogs={props.dialogs} messages={props.messages}/>}/>
+					<Route path='/news' render={ () => <News/>}/>
+					<Route path='/music' render={ () => <Music/>}/>
+					<Route path='/settings' render={ () => <Settings/>}/>
 				</div>
 			</div>
 		</BrowserRouter>);
