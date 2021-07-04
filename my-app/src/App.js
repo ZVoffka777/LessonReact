@@ -19,6 +19,12 @@ import Settings from './components/Settings/Settings';
 import {BrowserRouter, Route} from 'react-router-dom';
 
 const App = (props) => {
+	let newAppElement = React.createRef();
+	let addApp = () => {
+		let text = newAppElement.current.value;
+		alert(text);
+	}
+
 	return (
 		<BrowserRouter>
 			<div className='app-wrapper'>
@@ -30,6 +36,12 @@ const App = (props) => {
 					<Route path='/news' render={ () => <News/>}/>
 					<Route path='/music' render={ () => <Music/>}/>
 					<Route path='/settings' render={ () => <Settings/>}/>
+					<div>
+						<textarea ref={newAppElement}></textarea>
+					</div>
+					<div>
+						<button onClick={ addApp }>Add post</button>
+					</div>
 				</div>
 			</div>
 		</BrowserRouter>);
